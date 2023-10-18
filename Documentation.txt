@@ -1,0 +1,24 @@
+Documentation:
+
+The task was accomplished with the help of two applications in Express.js. The first application, named "app," serves as an API that allows web scraping (data collection) and data processing. This application runs on port 3000. The second application, named "frontEndApp," is responsible for displaying the "index.pug" page, which serves as the section that provides information to the client. A JavaScript file named "index.js" is attached to this page, which adds an event for the search bar. When the "Enter" key is pressed in the search bar, the entered text is sent to an "endpoint" using the "axios" library. Subsequently, the data received from that "endpoint" is displayed, or the message "Something went wrong!" is shown in case of an error during the scraping process.
+
+To perform web scraping, the "puppeteer" library was used. It was employed to select target information based on the "tag name" using the "querySelectorAll" function.
+
+For sentiment analysis, a function was created, which is called from the "endpoint" and receives the link to each post individually as a parameter. This function extracts the text from the post using the same method described in the "endpoint." Then, we search for key words, terms, and expressions from a list in the obtained text to determine whether the text is positive, negative, or neutral. To make this determination, we rely on the post's text, including the title. We count the number of words in the post content, excluding the title (assuming that a word consists of consecutive English alphabet letters).
+
+Guide:
+You will need the following libraries and packages:
+
+Express.js
+Puppeteer
+Cors
+Axios
+Pug
+Nodemon
+Ensure that no other applications are running on ports 3000 and 3001, as these are the ports on which the two applications run. If necessary, you can change the ports in the "appPort" and "frontEndAppPort" constants, which can be found on lines 9 and 10 in the "scrapingAPI.js" file.
+
+Additionally, the CSS framework "Tailwind" was used with the help of a CDN.
+
+After installing all the mentioned packages, you can start the application using the 'npm run start' command.
+
+Please review and test the application carefully to ensure that it functions correctly. If you encounter issues or require additional assistance, do not hesitate to seek help.

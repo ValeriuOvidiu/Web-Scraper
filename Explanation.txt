@@ -1,0 +1,3 @@
+To be honest, apart from JavaScript as a programming language, everything was entirely new to me. Not just Tailwind, but also Express.js, Puppeteer, the concept of web scraping, Axios, and sentiment analysis were all unfamiliar territory. So, I began tackling the task by immersing myself in learning about web scraping and the tools available for the job. My initial searches led me to Axios and Cheerio, only to later discover that these weren't suitable for dynamic websites, just like the exercise site I was dealing with. Afterward, I delved into Puppeteer, and things started to run more smoothly from there.
+
+All in all, I learned a great deal, and, in fact, a few extra ideas for my personal project came to me along the way.

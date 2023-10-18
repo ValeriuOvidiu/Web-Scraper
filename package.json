@@ -1,0 +1,26 @@
+{
+  "name": "scrapingapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon scrapingAPI.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "axios": "^1.5.1",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "pretty": "^2.0.0",
+    "pug": "^3.0.2",
+    "puppeteer": "^21.3.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
